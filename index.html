@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CrossFit - Portafolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="main-container">
+
+    <!-- Título y subtítulo -->
+    <div class="left">
+        <h1>CROSSFIT TRAINING CENTER</h1>
+        <p>No es magia, es disciplina</p>
+    </div>
+
+    <!-- CENTRO -->
+    <div class="center">
+        <h2>¿Qué es el CrossFit?</h2>
+        <p>
+            Es un sistema de entrenamiento de alta intensidad que combina ejercicios de fuerza, cardio y gimnasia. 
+            Se basa en movimientos funcionales que mejoran la resistencia, la fuerza, la agilidad y la condición física general, 
+            con rutinas variadas que cambian diariamente.
+        </p>
+
+        <!-- NUEVAS TARJETAS -->
+        <div class="cards">
+            <div class="card">
+                <h3>Principiante</h3>
+                <p>Ejercicios básicos y progresión</p>
+            </div>
+
+            <div class="card">
+                <h3>Intermedio</h3>
+                <p>Rutinas más intensas y dinámicas</p>
+            </div>
+
+            <div class="card">
+                <h3>Avanzado</h3>
+                <p>Alta intensidad y técnicas complejas</p>
+            </div>
+        </div>   
+    </div>
+
+</div>
+
+<!-- BOTÓN RESERVAS -->
+<button id="btnReserva" class="reserva-btn">Reservas</button>
+
+<!-- Ícono de ubicación debajo del botón -->
+<div id="iconoUbicacion" style="text-align: center; margin-top: 10px; color: white; cursor: pointer; position: fixed; top: 70px; right: 20px; z-index: 1000;">
+    <span>Visítanos</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 0a5 5 0 0 0-5 5c0 4.08 5 11 5 11s5-6.92 5-11a5 5 0 0 0-5-5zM8 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+    </svg>
+</div>
+
+<!-- PANEL DESPLEGABLE -->
+<div id="panelReserva" class="panel-reserva">
+    <h3>Reserva tu clase</h3>
+
+    <form id="formReserva">
+        <input type="text" id="nombre" placeholder="Tu nombre" required />
+
+        <select id="clase">
+            <option value="Principiantes">Principiantes</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Avanzado">Avanzado</option>
+        </select>
+
+        <input type="date" id="fecha" required />
+
+        <button type="submit">Reservar</button>
+    </form>
+
+    <div id="listaReservas"></div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+    CrossFit Ajusco | Todos los derechos reservados. 2026
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
